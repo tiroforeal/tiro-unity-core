@@ -14,10 +14,10 @@ namespace Tiro.Core.Common.Utilities.Time {
     
         public bool IsFinished => Time <= 0;
     
-        public void Reset() => Time = initialTime;
+        public void Reset() => Time = InitialTime;
     
         public void Reset(float newTime) {
-            initialTime = newTime;
+            InitialTime = newTime;
             Reset();
         }
     }

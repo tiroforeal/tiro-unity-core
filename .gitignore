@@ -1,0 +1,52 @@
+# =========================
+# Unity Generated Folders
+# =========================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# MemoryCaptures
+MemoryCaptures/
+
+# =========================
+# VS / Rider
+# =========================
+
+.vs/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# =========================
+# OS Files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Ignore PackageCache
+# =========================
+
+/Library/PackageCache/
+
+# =========================
+# But DO keep:
+# =========================
+# - Assets/
+# - Packages/
+# - ProjectSettings/
+# - Your UPM package folder

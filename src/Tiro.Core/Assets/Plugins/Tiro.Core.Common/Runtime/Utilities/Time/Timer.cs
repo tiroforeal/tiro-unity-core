@@ -2,28 +2,24 @@ using System;
 
 namespace Tiro.Core.Common.Utilities.Time {
     public abstract class Timer {
-        protected float initialTime;
+        protected float InitialTime;
         protected float Time { get; set; }
         public bool IsRunning { get; protected set; }
 
-        public float Progress
-        {
-            get {
-                if (initialTime <= 0f) return 0f;
-                return Math.Max(0f, Math.Min(1f, Time / initialTime));
-            }
-        }
-    
+        public float Progress => InitialTime <= 0f 
+            ? 0f
+            : Math.Max(0f, Math.Min(1f, Time / InitialTime));
+
         public Action OnTimerStart = delegate { };
         public Action OnTimerStop = delegate { };
 
         protected Timer(float value) {
-            initialTime = value;
+            InitialTime = value;
             IsRunning = false;
         }
 
         public void Start() {
-            Time = initialTime;
+            Time = InitialTime;
             if (!IsRunning) {
                 IsRunning = true;
                 OnTimerStart.Invoke();
