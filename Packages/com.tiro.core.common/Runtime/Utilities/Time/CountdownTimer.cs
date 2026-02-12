@@ -1,24 +1,24 @@
-namespace Tiro.Core.Common.Utilities.Time;
+namespace Tiro.Core.Common.Utilities.Time {
+    public class CountdownTimer : Timer {
+        public CountdownTimer(float value) : base(value) { }
 
-public class CountdownTimer : Timer {
-    public CountdownTimer(float value) : base(value) { }
-
-    public override void Tick(float deltaTime) {
-        if (IsRunning && Time > 0) {
-            Time -= deltaTime;
-        }
+        public override void Tick(float deltaTime) {
+            if (IsRunning && Time > 0) {
+                Time -= deltaTime;
+            }
         
-        if (IsRunning && Time <= 0) {
-            Stop();
+            if (IsRunning && Time <= 0) {
+                Stop();
+            }
         }
-    }
     
-    public bool IsFinished => Time <= 0;
+        public bool IsFinished => Time <= 0;
     
-    public void Reset() => Time = initialTime;
+        public void Reset() => Time = initialTime;
     
-    public void Reset(float newTime) {
-        initialTime = newTime;
-        Reset();
+        public void Reset(float newTime) {
+            initialTime = newTime;
+            Reset();
+        }
     }
 }

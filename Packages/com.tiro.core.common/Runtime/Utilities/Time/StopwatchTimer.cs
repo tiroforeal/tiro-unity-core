@@ -1,15 +1,15 @@
-namespace Tiro.Core.Common.Utilities.Time;
+namespace Tiro.Core.Common.Utilities.Time {
+    public class StopwatchTimer : Timer {
+        public StopwatchTimer() : base(0) { }
 
-public class StopwatchTimer : Timer {
-    public StopwatchTimer() : base(0) { }
-
-    public override void Tick(float deltaTime) {
-        if (IsRunning) {
-            Time += deltaTime;
+        public override void Tick(float deltaTime) {
+            if (IsRunning) {
+                Time += deltaTime;
+            }
         }
+    
+        public void Reset() => Time = 0;
+    
+        public float GetTime() => Time;
     }
-    
-    public void Reset() => Time = 0;
-    
-    public float GetTime() => Time;
 }
