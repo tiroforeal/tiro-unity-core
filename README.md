@@ -27,13 +27,13 @@ Add the package to your Unity project via:
 3. Select **Add package from git URL**
 4. Paste:
 
-`https://github.com/tiroforeal/tiro-unity-core.git?path=src/TiroUnityCore/Assets/Plugins/Tiro.Core.Common`
+`https://github.com/tiroforeal/tiro-unity-core.git?path=src/Tiro.Core/Assets/Plugins/Tiro.Core.Common`
 
 ### Option 2 — manifest.json
 
 Add this under `dependencies`:
 
-`"com.tiro.core.common": "https://github.com/YOUR_GITHUB_USERNAME/tiro-unity-core.git?path=src/TiroUnityCore/Assets/Plugins/Tiro.Core.Common"`
+`"com.tiro.core.common": "https://github.com/YOUR_GITHUB_USERNAME/tiro-unity-core.git?path=src/Tiro.Core/Assets/Plugins/Tiro.Core.Common"`
 
 ---
 
