@@ -14,8 +14,8 @@ namespace Tiro.Core.Common.Utilities.Time {
             }
         }
     
-        public UnityAction OnTimerStart = delegate { };
-        public UnityAction OnTimerStop = delegate { };
+        public Action OnTimerStart = delegate { };
+        public Action OnTimerStop = delegate { };
 
         protected Timer(float value) {
             initialTime = value;
