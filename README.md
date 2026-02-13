@@ -33,10 +33,11 @@ Add the package to your Unity project via:
 
 Add this under `dependencies`:
 
-`"com.tiro.core: "https://github.com/YOUR_GITHUB_USERNAME/tiro-unity-core.git?path=src/Tiro.Core/Assets/Plugins/Tiro.Core"`
+`"com.tiro.core: "https://github.com/tiroforeal/tiro-unity-core.git?path=src/Tiro.Core/Assets/Plugins/Tiro.Core"`
 
 ---
 
 ## Requirements
 
 - Unity 2022.3 or newer (recommended)
+- UniTask 2.2.5 or newer (recommended)
