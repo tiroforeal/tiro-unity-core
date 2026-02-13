@@ -1,6 +1,6 @@
 using System;
 
-namespace Tiro.Core.Common.Utilities.Time {
+namespace Tiro.Core.Utilities.Time {
     public abstract class Timer {
         protected float InitialTime;
         protected float Time { get; set; }

@@ -1,4 +1,4 @@
-namespace Tiro.Core.Common.Utilities.Time {
+namespace Tiro.Core.Utilities.Time {
     public class CountdownTimer : Timer {
         public CountdownTimer(float value) : base(value) { }
 

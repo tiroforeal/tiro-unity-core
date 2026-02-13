@@ -1,4 +1,4 @@
-namespace Tiro.Core.Common.Utilities.Time {
+namespace Tiro.Core.Utilities.Time {
     public class StopwatchTimer : Timer {
         public StopwatchTimer() : base(0) { }
 

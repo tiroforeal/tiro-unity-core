@@ -1,0 +1,13 @@
+{
+  "name": "com.tiro.core",
+  "version": "1.0.0",
+  "displayName": "Tiro Core",
+  "description": "Common reusable utilities and base abstractions",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
+  },
+  "author": {
+    "name": "Tarık S. Bulut"
+  }
+}
